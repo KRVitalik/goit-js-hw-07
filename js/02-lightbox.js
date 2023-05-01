@@ -18,16 +18,6 @@ function createGalleryImages(images) {
     }).join('')
 };
 
-imageContainer.addEventListener('click', (onImageClick))
-
-function onImageClick(e) {
-    e.preventDefault();
-
-    if (e.target.classList.value !== 'gallery__image') {
-        return
-    }
-};
-
 const lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250,
     captionsData: 'alt',
